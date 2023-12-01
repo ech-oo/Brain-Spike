@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+       box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #1c0522;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin: 20px;
+        color: white;
+    }
+
+    .heading {
+        font-size: 60px;
+        color: white;
+    }
+
+    .heading span {
+        font-style: italic;
+        font-size: 30px;
+    }
+
+    .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        margin: 10px 40px;
+    }
+
+    
+    .profile .profile-img {
+        height: 260px;
+        width: 260px;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: 400ms;
+    }
+
+    .profile:hover .profile-img {
+        filter: grayscale(0);
+    }
+
+    .user-name {
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    .profile h5 {
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        color: #ccc;
+    }
+
+   li {
+    display: flex;
+   }
+   header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo {
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover , 
+.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+    </style>
+    <body>
+        <header>
+            <a href="#" class="logo">Brain Spike</a>
+            <ul> 
+                <li><a href="BrainSpike.html" class="active">Home</a></li>
+                <li><a href="Brain Spike.html">Sobre</a></li>
+                <li><a href="Brain Spike.html">Equipe</a></li>
+                <li><a href="Brain Spike.html">App</a></li>
+                <li><a href="registro.html">Entrar/Cadastrar</a></li>
+                <li><a href="Brain Spike.html">Contato</a></li>
+            </ul>
+        </header>
+        <br><Br><br><Br><br><Br><br><Br><br><Br>
+        <div class="container">
+         
+            <li>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="anne.jpg" class="profile-img">
+                    <h3 class="user-name">Anne Caroline</h3>
+                    <h5>Web Designer & Desenvolvedora do Jogo</h5>
+                </div>
+            </div><br>
+            
+            <div class="profiles">
+                <div class="profile">
+                    <img src="tore.jpeg" class="profile-img">
+                    <h3 class="user-name">Ettore Mendonça</h3>
+                    <h5>Mobile Design & Web Design</h5>
+                </div>
+            </div><br>
+
+            <div class="profiles">
+                <div class="profile">
+                    <img src="alves.jpg" class="profile-img">
+                    <h3 class="user-name">Guilherme Alves</h3>
+                    <h5>Documentação & Mobile Design</h5>
+                </div>
+            </div><br>
+
+            <div class="profiles">
+                <div class="profile">
+                    <img src="dalla.jpeg" class="profile-img">
+                    <h3 class="user-name">Guilherme Dalla</h3>
+                    <h5>Documentação & UI/UX</h5>
+                </div>
+            </div><br>
+
+            <div class="profiles">
+                <div class="profile">
+                    <img src="jonatas.jpg" class="profile-img">
+                    <h3 class="user-name">Jônatas Luigi</h3>
+                    <h5>Documentação & Desenvolvimento Web</h5>
+                </div>
+            </div><br>
+        </div>
+            </li>
+</body>
+</html>
